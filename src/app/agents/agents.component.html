@@ -1,6 +1,14 @@
 <div class="agent-container">
-    <div *ngFor="let agent of agents">
-        <h3> {{ agent.name }} </h3>
-        <p> {{ agent.country }} </p>
+    <div class="agent-card" *ngFor="let agent of agents">
+        <div class="agent-image">
+            <img [src]="agent.image" alt="">
+        </div>
+        <div class="agent-information">
+            <h3>
+                {{ agent.name }} - <span> {{ agent.country }}</span>
+            </h3>
+            <p>  </p>
+            <p> {{ agent.biography }} </p>
+        </div>
     </div>
 </div>

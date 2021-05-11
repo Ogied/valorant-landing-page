@@ -4,4 +4,5 @@ export interface Agent {
     biography: string;
     country: string;
     type: number;
+    image?: string
 }
